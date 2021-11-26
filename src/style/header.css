@@ -1,0 +1,41 @@
+.btn_search {
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .btn_search {
+    margin: auto;
+  }
+  .search_box {
+    width: 100% !important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 50px;
+  }
+}
+
+
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.search .btn_search:hover{
+    background-color: rgb(243, 158, 0) !important;
+    font-weight: bold !important;
+    padding: 10px !important;
+text-decoration: none;
+}
+
+nav li a{
+    color: white !important;
+}
+
+nav li a:hover{
+    background-color: rgb(243, 158, 0) !important;
+    border-radius: 50px !important;
+    font-weight: bold !important;
+}
+
+
+
