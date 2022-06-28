@@ -1,61 +1,60 @@
 import Search from "./Search";
-import "../../style/header.css"
+import "../../style/header.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="mb-5">
-      <nav class="container navbar  navbar-expand-md  bg-dark fixed-top navbar-dark">
-        <Link to="/" class="navbar-brand">
+      <nav className="container navbar  navbar-expand-md  bg-dark fixed-top navbar-dark">
+        <Link to="/" className="navbar-brand">
           News
         </Link>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
+        <div className="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul className="navbar-nav">
+            <li className="nav-item">{Search()}</li>
 
-
-
-
-
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-
-            <li class="nav-item">
-             {Search()}
-            </li>
-
-
-            <li class="nav-item dropdown">
-      <a class="nav-link ml-2 text-center" href="#" >
-        Category
-      </a>
-      <div class="dropdown-menu text-center bg-secondary">
-        <Link class="dropdown-item" to="/news/business">Business</Link>
-        <Link class="dropdown-item" to="/news/entertainment">Entertainment</Link>
-        <Link class="dropdown-item" to="/news/science">Science</Link>
-        <Link class="dropdown-item" to="/news/sports">Sports</Link>
-        <Link class="dropdown-item" to="/news/technology">Technology</Link>
-      </div>
-      
-    </li>
-
-            <li class="nav-item">
-              <a class="nav-link ml-2 text-center" target="_blank" href="https://lalchandteli.herokuapp.com/#about">
-                About
+            <li className="nav-item dropdown">
+              <a className="nav-link ml-2 text-center" href="#">
+                Category
               </a>
+              <div className="dropdown-menu text-center bg-secondary">
+                <Link className="dropdown-item" to="/news/business">
+                  Business
+                </Link>
+                <Link className="dropdown-item" to="/news/entertainment">
+                  Entertainment
+                </Link>
+                <Link className="dropdown-item" to="/news/science">
+                  Science
+                </Link>
+                <Link className="dropdown-item" to="/news/sports">
+                  Sports
+                </Link>
+                <Link className="dropdown-item" to="/news/technology">
+                  Technology
+                </Link>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link ml-2 text-center"target="_blank" href="https://lalchandteli.herokuapp.com/#contact">
+
+            <li className="nav-item">
+              <Link className="nav-link ml-2 text-center" to="/about">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link ml-2 text-center" to="/contact">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

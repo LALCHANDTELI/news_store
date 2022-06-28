@@ -19,13 +19,6 @@ export const Entertainment_Page_News = (news) => {
   };
 };
 
-export const Health_Page_News = (news) => {
-  return {
-    type: "health",
-    payload: news,
-  };
-};
-
 export const Science_Page_News = (news) => {
   return {
     type: "science",
@@ -39,8 +32,6 @@ export const Sports_Page_News = (news) => {
     payload: news,
   };
 };
-
-
 
 export const Technology_Page_News = (news) => {
   return {
