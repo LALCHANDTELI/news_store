@@ -40,11 +40,11 @@ const Navbar = () => {
       <div class="dropdown-menu text-center bg-secondary">
         <Link class="dropdown-item" to="/news/business">Business</Link>
         <Link class="dropdown-item" to="/news/entertainment">Entertainment</Link>
-        <Link class="dropdown-item" to="/news/health">Health</Link>
         <Link class="dropdown-item" to="/news/science">Science</Link>
         <Link class="dropdown-item" to="/news/sports">Sports</Link>
         <Link class="dropdown-item" to="/news/technology">Technology</Link>
       </div>
+      
     </li>
 
             <li class="nav-item">
